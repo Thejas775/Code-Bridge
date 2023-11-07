@@ -1,3 +1,54 @@
+.navbar {
+    background: #000; 
+    color: #fff; 
+    padding: 10px 0;
+    text-align: right;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 70px;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 20px;
+    font-family: serif;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+.navbar ul li a.active {
+    text-decoration: underline;
+}
+.brand {
+    padding: 10px;
+    background: linear-gradient(45deg, #E94081, #326F9E);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    margin-right: 20px; 
+    float: left; }
+
+
+
+.custom-hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 0 20px; 
+}
+
 .preloader {
     position: fixed;
     top: 0;
