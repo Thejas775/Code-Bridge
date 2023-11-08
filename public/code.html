@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/code.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <p>Your instructions go here.</p>
+        </div>
+        <div class="code-editor">
+            <div class="editor-header">
+                <button id="htmlButton">HTML</button>
+                <button id="cssButton">CSS</button>
+                <button id="jsButton">JavaScript</button>
+                <button id="runButton" class="ml-8 rounded-xl">Run</button>
+            </div>
+            <div class="editor-body">
+                <textarea id="htmlCode" class="code-pane" placeholder="Enter HTML code"></textarea>
+                <textarea id="cssCode" class="code-pane" placeholder="Enter CSS code"></textarea>
+                <textarea id="jsCode" class="code-pane" placeholder="Enter JavaScript code"></textarea>
+            </div>
+            
+        </div>
+        <div class="output">
+            <h1 class="text-5xl">Output Pane</h1>
+            <iframe id="outputFrame"></iframe>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
