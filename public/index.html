@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
-<body class="bg-black">
+
+<!--Itha Preloader ahe sagala set yala haath lavu naka-->
+<body class="bg-gray-800">
     <div class="preloader">
         <div class="preloader-content">
             <h1 class="text-7xl mb-5 gradient-text">Code Bridge</h1>
@@ -21,17 +23,46 @@
             
         </div>
     </div>
-    <div class="brand">CodeBridge</div>
-<nav class="navbar">
-    <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#events">View Stacks</a></li>
-        <li><a href="#team">Meet Our Team</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-    </ul>
-</nav>
 
-<hr class="custom-hr">
+
+
+    <!--Navbar kahi change karu naka please-->
+    <style>
+        .hover-text-black:hover {
+            color: black !important;
+        }
+    
+        .hover-text-black:hover .text-white {
+            color: black !important;
+        }
+    </style>
+    
+    <div>
+        <div class="border py-3 px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="brand">CodeBridge</span>
+            </div>
+            <div class="flex gap-x-3">
+                <div class="cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100 hover-text-black">
+                    <span class="text-lg font-medium text-white">Home</span>
+                </div>
+                <div class="cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100 hover-text-black">
+                    <span class="text-lg font-medium text-white">Courses</span>
+                </div>
+                <div class="cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100 hover-text-black">
+                    <a href="meet.html"><span class="text-lg font-medium text-white">Meet Our Team</span></a>
+                </div>
+                <div class="cursor-pointer items-center gap-x-1 rounded-md border py-2 px-4 hover:bg-gray-100 hover-text-black">
+                    <span class="text-lg font-medium text-white">Sign in</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
 
     
     <script src="script.js"></script>
