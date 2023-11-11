@@ -7,10 +7,80 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/custom.css">
+    <style>
+        body {
+            background-color: #01072c;
+            color: white;
+            font-family: 'Arial', sans-serif;
+
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=1380&t=st=1699711056~exp=1699711656~hmac=0a3f13306c60b4d887190bc7301e93359564313f7054ee15a73886b62215ef44') no-repeat center center/cover;
+
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #45a049;
+        }
+
+        .navbar {
+            border-bottom: 1px solid #ccc;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: #2d3748;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            border-radius: 3px;
+        }
+
+        .navbar a:hover {
+            background-color: #4a5568;
+        }
+        .hover-text-black:hover .text-white {
+            color: black !important;
+        }
+        .thejas{
+            background-color: #010c52;
+
+        }
+    </style>
 </head>
 
-<!--Itha Preloader ahe sagala set yala haath lavu naka-->
-<body class="bg-gray-800">
+<body>
     <div class="preloader">
         <div class="preloader-content">
             <h1 class="text-7xl mb-5 gradient-text">Code Bridge</h1>
@@ -18,55 +88,40 @@
                 <a href="" class="typewrite" data-period="2000" data-type='[ "Website Development", "App Development", "C++", "Kotlin","much more...." ]'>
                   <span class="wrap"></span>
                 </a>
-              </h1>
+            </h1>
             <button class="button-64" role="button" onclick="addNewClass()"><span class="text">Go to Home</span></button>
-            
         </div>
     </div>
 
-
-
-    <!--Navbar kahi change karu naka please-->
-    <style>
-        .hover-text-black:hover {
-            color: black !important;
-        }
-    
-        .hover-text-black:hover .text-white {
-            color: black !important;
-        }
-    </style>
-    
-    <div>
+    <div class="thejas">
         <div class="border py-3 px-6 flex justify-between items-center">
             <div class="flex items-center">
                 <span class="brand">CodeBridge</span>
             </div>
             <div class="flex gap-x-3">
                 <div class="cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100 hover-text-black">
-                    <span class="text-lg font-medium text-white">Home</span>
+                    <a href="index.html"><span class="text-lg font-medium text-white">Home</span></a>
                 </div>
                 <div class="cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100 hover-text-black">
-                    <span class="text-lg font-medium text-white">Courses</span>
+                    <a href="meet.html"><span class="text-lg font-medium text-white">Courses</span></a>
                 </div>
                 <div class="cursor-pointer items-center gap-x-1 rounded-md py-2 px-4 hover:bg-gray-100 hover-text-black">
                     <a href="meet.html"><span class="text-lg font-medium text-white">Meet Our Team</span></a>
                 </div>
                 <div class="cursor-pointer items-center gap-x-1 rounded-md border py-2 px-4 hover:bg-gray-100 hover-text-black">
-                    <span class="text-lg font-medium text-white">Sign in</span>
+                    <span class="text-lg font-medium text-white">Sign Up</span>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
 
+    <div class="hero">
+        <h1>Welcome to Code Bridge</h1>
+        <h2>Hands-on learning for tech enthusiasts</h2>
+        <button>Explore Courses</button>
+    </div>
 
-
-    
     <script src="script.js"></script>
     <script src="animation.js"></script>
-    
 </body>
 </html>
