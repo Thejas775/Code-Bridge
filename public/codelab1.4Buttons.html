@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/code.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+    <style>
+        .gutter {
+            cursor: col-resize;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-800 h-screen text-white flex flex-col">
+
+    <div class="flex flex-1 w-full">
+        <div id="instructions" class="output flex flex-col w-full relative overflow-y-auto mt-5 mb-5 ml-5 ">
+            <div class="gutter absolute h-full w-4 left-0 top-0 cursor-col-resize"></div>
+            <h1 class="text-3xl font-semibold mb-4">Instructions</h1>
+            <iframe id="instructions-content" class="flex-1 bg-gray-900 w-full rounded-lg"></iframe>
+        </div>
+
+        <div id="code-editor" class="code-editor flex flex-col flex-1 p-4 w-full rounded-lg overflow-y-auto">
+            <div class="editor-header flex justify-between items-center mb-4">
+                <button id="htmlButton" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">HTML</button>
+                <button id="cssButton" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">CSS</button>
+                <button id="jsButton" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">JavaScript</button>
+                <button id="runButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Run</button>
+            </div>
+
+            <div class="editor-body flex flex-1 space-x-4 w-full">
+                <textarea id="htmlCode" class="code-pane flex-1 bg-gray-900 text-white rounded-lg p-2"
+                    placeholder="Enter HTML code"></textarea>
+                <textarea id="cssCode" class="code-pane flex-1 bg-gray-900 text-white rounded-lg p-2"
+                    placeholder="Enter CSS code"></textarea>
+                <textarea id="jsCode" class="code-pane flex-1 bg-gray-900 text-white rounded-lg p-2"
+                    placeholder="Enter JavaScript code"></textarea>
+            </div>
+        </div>
+
+        <div id="output" class="output flex flex-col w-full relative overflow-y-auto mt-5 mb-5 mr-5 ">
+            <div class="gutter absolute h-full w-4 left-0 top-0 cursor-col-resize"></div>
+            <h1 class="text-3xl font-semibold mb-4">Output Pane</h1>
+            <iframe id="outputFrame" class="flex-1 bg-gray-900 w-full rounded-lg"></iframe>
+        </div>
+    </div>
+
+    <script src="code1.4.js"></script>
+</body>
+
+</html>

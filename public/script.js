@@ -54,3 +54,34 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+function signup(event) {
+    event.preventDefault();
+
+    var isConfirmed = confirm("This is a prototype website. Do you want to continue to the courses page?");
+    
+    if (isConfirmed) {
+        window.location.href = "courses.html";
+    }
+}
+function coming(){
+    alert("Coming Soon")
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('codelabButton');
+    const listItems = document.querySelectorAll('.left-section ul li');
+
+    listItems.forEach(function (listItem) {
+        listItem.addEventListener('click', function () {
+            const listItemText = listItem.textContent.trim();
+            const codelabName = listItemText.replace(/\s/g, ''); // Remove spaces
+            const codelabLink = `codelab${codelabName}.html`;
+
+            button.textContent = `Take the codelab ${listItemText}`;
+            button.setAttribute('onclick', `window.location.href='${codelabLink}'`);
+        });
+    });
+});
